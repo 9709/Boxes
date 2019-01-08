@@ -29,4 +29,15 @@
     return self.height * self.width * self.length;
 }
 
+- (void)compareVolume: (Box*)otherBox {
+    if ([self volume] > [otherBox volume]) {
+        float fit = [otherBox volume]/[self volume];
+        NSLog(@"Companion Cube 2 can fit in Companion Cube %.2f times.", fit);
+    } else {
+        float fit = [self volume]/[otherBox volume];
+        NSLog(@"Companion Cube can fit in Companion Cube 2 %.2f times.", fit);
+    }
+    
+    
+}
 @end

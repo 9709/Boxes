@@ -25,12 +25,7 @@ int main(int argc, const char * argv[]) {
     float finalVolume2 = [companionCube2 volume];
     NSLog(@"The volume of the Companion Cube 2 is %.2fcm cubed.", finalVolume2);
     
-    if (finalVolume > finalVolume2) {
-        float fit = finalVolume2/finalVolume;
-        NSLog(@"Companion Cube 2 can fit in Companion Cube %.2f times.", fit);
-    } else {
-        float fit = finalVolume/finalVolume2;
-        NSLog(@"Companion Cube can fit in Companion Cube 2 %.2f times.", fit);
-    }
+    
+    [companionCube compareVolume:companionCube2];
     
 }

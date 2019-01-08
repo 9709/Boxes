@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (float)volume;
 
+- (void)compareVolume: (Box*)otherBox;
+
 @end
 
 NS_ASSUME_NONNULL_END
