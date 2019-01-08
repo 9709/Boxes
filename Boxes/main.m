@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    return 0;
+    
+    Box *companionCube = [[Box alloc] initWithHeight:10
+                                       initWithWidth:10
+                                      initWithLength:10];
+    
+    NSLog(@"The volume of the Companion Cube is %.2fcm cube.", [companionCube volume]);
+    
+    
 }
