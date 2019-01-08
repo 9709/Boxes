@@ -29,6 +29,8 @@
     return self.height * self.width * self.length;
 }
 
+
+// method to compare volume of two boxes
 - (void)compareVolume: (Box*)otherBox {
     if ([self volume] > [otherBox volume]) {
         float fit = [otherBox volume]/[self volume];

@@ -11,6 +11,7 @@
 
 int main(int argc, const char * argv[]) {
     
+    // box 1
     Box *companionCube = [[Box alloc] initWithHeight:10
                                        initWithWidth:10
                                       initWithLength:10];
@@ -18,6 +19,9 @@ int main(int argc, const char * argv[]) {
     float finalVolume = [companionCube volume];
     NSLog(@"The volume of the Companion Cube is %.2fcm cubed.", finalVolume);
     
+    
+    
+    // box 2
     Box *companionCube2 = [[Box alloc] initWithHeight:20
                                         initWithWidth:20
                                        initWithLength:30];
@@ -26,6 +30,8 @@ int main(int argc, const char * argv[]) {
     NSLog(@"The volume of the Companion Cube 2 is %.2fcm cubed.", finalVolume2);
     
     
+    
+    // comparing volume
     [companionCube compareVolume:companionCube2];
     
 }

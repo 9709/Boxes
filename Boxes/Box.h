@@ -16,12 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property float width;
 @property float length;
 
-//- (instancetype)initWithHeight: (float)height
-//                 initWithWidth: (float)width
-//                initWithLength: (float)length;
-
-
-- (instancetype)initWithHeight: (float)height initWithWidth: (float)width initWithLength: (float)length;
+- (instancetype)initWithHeight: (float)height
+                 initWithWidth: (float)width
+                initWithLength: (float)length;
 
 - (float)volume;
 
